@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>रोपामोर गांव</title>
+<style>
+body{
+    font-family:Arial,sans-serif;
+    margin:0;
+    background:#eaf6ff;
+}
+
+header{
+    background:linear-gradient(135deg,#0099ff,#66ccff);
+    color:white;
+    text-align:center;
+    padding:30px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1{
+    margin:0;
+    font-size:32px;
+}
+
+.card{
+    background:white;
+    margin:15px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+img{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+video{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+footer{
+    background:#0099ff;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:20px;
+}
+
+marquee{
+    background:#ffffcc;
+    padding:10px;
+    font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<header>
+
+<h1>🏡 रोपामोर गांव</h1>
+
+<p>
+दरीयापुर-1 पंचायत | हवेली खड़गपुर | मुंगेर | बिहार
+</p>
+
+<p>
+हमारा गांव • हमारी पहचान • हमारा गौरव
+</p>
+
+</header>
+
+<marquee>
+🌾 रोपामोर गांव की आधिकारिक वेबसाइट में आपका स्वागत है 🌾
+</marquee>
+<div class="card">
+<h2> आज की तारीख</h2>
+<p id="date"></p>
+</div>
+
+<script>
+document.getElementById("date").innerHTML =
+new Date().toLocaleDateString("hi-IN");
+</script>
+<div class="card">
+<h2>⏰ वर्तमान समय</h2>
+<p id="clock"></p>
+</div>
+
+<script>
+setInterval(function(){
+document.getElementById("clock").innerHTML =
+new Date().toLocaleTimeString();
+},1000);
+</script>
+<section>
+
+<p>TEST PHOTO</p>
+<div class="card">
+<h2>गांव की फोटो</h2>
+<img src="Village.jpg"
+width="100%" alt="रोपामोर गांव">
+</div>
+<div class="card">
+<h2>🎥 रोपामोर गांव का वीडियो</h2>
+
+<video width="100%" controls>
+  <source src="yadav.mp4" type="video/mp4">
+  आपका ब्राउज़र वीडियो सपोर्ट नहीं करता।
+</video>
+
+</div>
+
+<div class="card">
+<h2>गांव के बारे में</h2>
+<p>
+रोपामोर एक सुंदर गांव है। यहां हरियाली, खेत और शांत वातावरण है।
+गांव के लोग मेहनती और मिलनसार हैं। यह वेबसाइट रोपामोर गांव की
+जानकारी और सूचनाओं के लिए बनाई गई है।
+</p>
+
+</div>
+<div class="card">
+<h2>🌾 रोपामोर फसल कैलेंडर</h2>
+
+<p><b>🌱 धान (Paddy):</b> जून - जुलाई में बुवाई, नवंबर - दिसंबर में कटाई।</p>
+
+<p><b>🌾 गेहूँ (Wheat):</b> नवंबर - दिसंबर में बुवाई, मार्च - अप्रैल में कटाई।</p>
+
+<p><b>🌿 चना (Gram):</b> अक्टूबर - नवंबर में बुवाई, फरवरी - मार्च में कटाई।</p>
+
+<p><b>🌱 मूंग (Moong):</b> मार्च - अप्रैल में बुवाई, जून - जुलाई में कटाई।</p>
+
+<p><b>🌽 मक्का (Corn):</b> जून - जुलाई में बुवाई, सितंबर - अक्टूबर में कटाई।</p>
+
+<p><b>🚜 मुख्य फसलें:</b> धान, गेहूँ, चना, मूंग और मक्का।</p>
+
+</div>
+
+<div class="card">
+<h2>महत्वपूर्ण नंबर</h2>
+<p>एम्बुलेंस: 108</p>
+<p>पुलिस: 112</p>
+<p>सरपंच: यहाँ नंबर लिखें</p>
+</div>
+
+<div class="card">
+<h2>सूचनाएँ</h2>
+
+<p>✅ गांव की मुख्य सड़क की मरम्मत का कार्य पूरा हो चुका है।</p>
+
+<p>📚 मिडिल स्कूल रोपामोर में पुस्तकालय शुरू करने की तैयारी चल रही है।</p>
+
+<p>🤝 पुस्तकालय कार्य से जुड़े सदस्य:</p>
+
+<p>• अंकित यादव</p>
+<p>• लालू यादव</p>
+<p>• नितीश यादव (निटू)</p>
+<p>• राजीव यादव</p>
+</div>
+<div class="card">
+<h2>🏫 स्कूल की जानकारी</h2>
+<p>मिडिल स्कूल रोपामोर</p>
+<p>यह विद्यालय गांव के बच्चों को शिक्षा प्रदान करता है।</p>
+</div>
+<div class="card">
+<h2>📍 गांव की जानकारी</h2>
+
+<p><b>🏘️ गांव:</b> रोपामोर</p>
+
+<p><b>👨‍👩‍👧‍👦 कुल जनसंख्या:</b> 1310</p>
+
+<p><b>🏠 कुल घर:</b> 231</p>
+
+<p><b>🏛️ पंचायत:</b> दरियापुर 1</p>
+
+<p><b>🏢 प्रखंड:</b> हवेली खड़गपुर</p>
+
+<p><b>📍 जिला:</b> मुंगेर</p>
+
+<p><b>📮 पिन कोड:</b> 811213</p>
+
+</div>
+<div class="card">
+<h2>🏛️ प्रशासनिक जानकारी</h2>
+
+<p><b>👩 मुखिया:</b> रेणु देवी</p>
+
+<p><b>👩 सरपंच:</b> निर्मला देवी</p>
+
+<p><b>👨 वार्ड सदस्य:</b> सत्यनारायण ठाकुर</p>
+
+<p><b>👮 थाना:</b> गंगटा मोड़</p>
+
+<p><b>📮 डाकघर:</b> दरियापुर 1</p>
+
+</div>
+<div class="card">
+<h2>🎉 प्रसिद्ध त्योहार</h2>
+
+<p>
+🌞 छठ पूजा हमारे गांव का सबसे प्रसिद्ध और महत्वपूर्ण पर्व है।
+इस अवसर पर पूरे गांव में श्रद्धा, स्वच्छता और उत्साह का माहौल रहता है।
+</p>
+
+</div>
+</div>
+
+<div class="card">
+<h2>🎯 हमारा लक्ष्य</h2>
+<p>
+इस वेबसाइट का उद्देश्य रोपामोर गांव से बाहर रहने वाले गांव के लोगों को
+अपने गांव से जुड़े रहने का अवसर देना है। यहां गांव की जानकारी, समाचार,
+कार्यक्रम और यादें साझा की जाएंगी ताकि सभी लोग अपने गांव से जुड़े रहें।
+</p>
+</div>
+<div class="card">
+<h2>🌟 हमारे गांव की विशेषताएं</h2>
+
+<p>🛣️ रोपामोर गांव की सड़कें अच्छी हैं और आवागमन की सुविधा बेहतर है।</p>
+
+<p>🎓 आसपास के गांवों की तुलना में रोपामोर में शिक्षित लोगों की संख्या अधिक है।</p>
+
+<p>🌾 गांव के अधिकांश लोग खेती से जुड़े हैं।</p>
+
+<p>🤝 गांव के लोग मिलनसार और मेहनती हैं।</p>
+
+<p>🌳 गांव का वातावरण शांत और हरियाली से भरपूर है।</p>
+
+</div>
+<div class="card">
+<h2>🏆 हमारे गांव के गौरव</h2>
+
+<p>👨‍🏫 शिक्षक: देवनंदन यादव</p>
+<p>👨‍⚕️ डॉक्टर: S.K. Suman (संजय यादव)</p>
+<p>👨‍💻 इंजीनियर: रविकांत यादव</p>
+<p>🏦 बैंक मैनेजर: रविकांत यादव</p>
+<p>🚆 रेलवे: राजकुमार यादव (मोनाज यादव)</p>
+<p>🏭 मुंगेर सिगरेट फैक्ट्री: अमरदीप यादव (छोटू कुमार)</p>
+<p>👮 इंस्पेक्टर: धर्मेंद्र यादव</p>
+
+</div>
+
+<div class="card">
+<h2>📸 फोटो गैलरी</h2>
+
+<h3>🌳 गांव की हरियाली</h3>
+<img src="haryali.jpeg" width="100%" alt="गांव की हरियाली">
+<br><br>
+
+<h3>🌾 खेत और कृषि</h3>
+<img src="agriculture.jpeg" width="100%" alt="कृषि">
+<br><br>
+
+<h3>🌾 खेत का दृश्य</h3>
+<img src="field.jpeg" width="100%" alt="खेत">
+<br><br>
+
+<h3>🚪 गांव का प्रवेश द्वार</h3>
+<img src="gate.jpeg" width="100%" alt="गेट">
+<br><br>
+
+<h3>🏫 मिडिल स्कूल रोपामोर</h3>
+<img src="school.jpeg" width="100%" alt="स्कूल">
+<br><br>
+
+<h3>🏛️ काली मंदिर</h3>
+<img src="kalitemple.jpeg" width="100%" alt="काली मंदिर">
+<br><br>
+
+<h3>🛕 सीतला मंदिर</h3>
+<img src="sitlatemple.jpeg" width="100%" alt="सीतला मंदिर">
+<br><br>
+
+<h3>🛕 हनुमान मंदिर</h3>
+<img src="hanumantemple.jpeg" width="100%" alt="हनुमान मंदिर">
+<br><br>
+
+<h3>🏞️ कठिया नदी</h3>
+<img src="kathiyariver.jpeg" width="100%" alt="कठिया नदी">
+<br><br>
+
+<h3>🏪 निवास यादव किराना स्टोर</h3>
+<img src="nivashkiranastore.jpeg" width="100%" alt="किराना स्टोर">
+<br><br>
+
+<h3>🏠 गांव के मकान</h3>
+<img src="roofs.jpeg" width="100%" alt="मकान">
+<br><br>
+
+<h3>🌅 गांव का सुंदर दृश्य</h3>
+<img src="Village.jpg" width="100%" alt="रोपामोर गांव">
+
+</div>
+
+
+</div>
+<h2>🏡 Needs of Village</h2>
+
+<p>🚜 किसानों को आधुनिक कृषि उपकरणों और नई तकनीकों से परिचित कराया जाए।</p>
+
+<p>🚭 युवाओं को नशा मुक्त बनाने के लिए समय-समय पर काउंसलिंग और जागरूकता कार्यक्रम चलाए जाएँ।</p>
+
+<p>🪑 गांव के विभिन्न स्थानों पर सार्वजनिक बैठने के लिए कुर्सियाँ/बेंच लगाई जाएँ।</p>
+
+<p>💡 रात के समय सुरक्षा और सुविधा के लिए सार्वजनिक लाइटों की व्यवस्था की जाए।</p>
+
+<p>📚 गांव में पुस्तकालय को और विकसित किया जाए ताकि विद्यार्थियों को अध्ययन की बेहतर सुविधा मिल सके।</p>
+
+<p>⚽ बच्चों और युवाओं के खेल-कूद तथा शारीरिक विकास के लिए एक अच्छे खेल मैदान (Playing Ground) की व्यवस्था की जाए।</p>
+<div class="card">
+<h2>🏥 स्वास्थ्य सुविधा</h2>
+
+<p>❌ रोपामोर गांव में वर्तमान में कोई स्वास्थ्य केंद्र (Health Care Center) उपलब्ध नहीं है।</p>
+
+<p>🚑 इलाज के लिए ग्रामीणों को अन्य स्थानों पर जाना पड़ता है।</p>
+
+<p>📌 गांव की प्रमुख आवश्यकताओं में एक स्वास्थ्य केंद्र की स्थापना भी शामिल है।</p>
+
+<p>🤝 भविष्य में गांव में बेहतर स्वास्थ्य सुविधाएँ उपलब्ध कराने का प्रयास किया जाना चाहिए।</p>
+
+</div>
+<div class="card">
+<h2>🗺️ गांव का नक्शा</h2>
+
+<p>रोपामोर गांव की लोकेशन Google Maps पर देखने के लिए नीचे क्लिक करें:</p>
+
+<a href="https://maps.app.goo.gl/oWymuXZnBYfqBqkr8" target="_blank">
+📍 Google Maps पर रोपामोर गांव देखें
+</a>
+
+</div>
+<div class="card">
+<h2>📜 वेबसाइट का उद्देश्य</h2>
+
+<p>
+रोपामोर गांव से बाहर रहने वाले लोगों को अपने गांव से जोड़कर रखना,
+गांव की जानकारी साझा करना तथा गांव के विकास में सभी की भागीदारी बढ़ाना।
+</p>
+
+</div>
+<div class="card">
+<h2>❤️ गांव का संदेश</h2>
+<p>
+"हमारा गांव, हमारी पहचान।
+आइए मिलकर रोपामोर को और बेहतर बनाएं।"
+</p>
+</div>
+<div class="card">
+
+<h2>👨‍💻 Website Developers</h2>
+
+<h3>🌟 Anshuman Yadav</h3>
+<p>Founder & Main Developer</p>
+
+<hr>
+
+<h3>🌟 Prince Yadav</h3>
+<p>Co-Developer & Supporter</p>
+
+</div>
+
+<div class="card">
+<h2>👥 Website Visitors</h2>
+
+<a href="https://www.freecounterstat.com" title="website counter">
+<img src="https://counter.websiteout.com/cgi-bin/counter.pl?style=0006&pad=5&type=page&initCount=0" alt="visitor counter">
+</a>
+
+</div>
+</div>
+<footer>
+<h3>🏡 रोपामोर गांव</h3>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+<p>
+Developed By Anshuman Yadav & Prince Yadav
+</p>
+
+</footer>
+</section>
+</section>
+
+</body>
+</html>
